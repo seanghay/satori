@@ -29,6 +29,10 @@ describe('detectLanguageCode', () => {
     expect(detectLanguageCode('我知道怎麼說中文')).toBe('zh')
   })
 
+  it('should detect khmer', async () => {
+    expect(detectLanguageCode('សួស្តី')).toBe('km')
+  })
+  
   it('should detect thai', async () => {
     expect(detectLanguageCode('สวัสดี')).toBe('th')
   })
